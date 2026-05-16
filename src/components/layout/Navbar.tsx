@@ -4,7 +4,7 @@ import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
