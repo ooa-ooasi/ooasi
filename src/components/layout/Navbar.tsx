@@ -4,6 +4,7 @@ import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -32,7 +33,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <img src="/ooasiwebsite/logo.png" alt="OOA Solutions Inc." className="h-10 w-10 object-contain" />
+          <img src={logo} alt="OOA Solutions Inc." className="h-10 w-10 object-contain" />
           <span className="font-serif text-2xl font-bold tracking-tight text-primary">
             OOA <span className="text-accent">Solutions</span>
           </span>
